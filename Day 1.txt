@@ -1,0 +1,59 @@
+PS E:\Extra COurse> dir
+
+PS E:\Extra COurse> cd blogsite
+
+PS E:\Extra COurse\blogsite> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+E:\Extra COurse\blogsite\blog\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 26, 2024 - 14:47:56
+Django version 5.0.6, using settings 'blogsite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+E:\Extra COurse\blogsite\blog\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 26, 2024 - 14:47:58
+Django version 5.0.6, using settings 'blogsite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+E:\Extra COurse\blogsite\blog\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+PS E:\Extra COurse\blogsite> python manage.py createsuperuser
+Username (leave blank to use 'acer'): Raaichu
+Email address: aashwani2001@gmail.com
+Password:
+Password (again):
+The password is too similar to the email address.
+Bypass password validation and create user anyway? [y/N]: N
+Password:
+Password (again):
+Superuser created successfully.
+PS E:\Extra COurse\blogsite> python manage.py unserver
+Unknown command: 'unserver'. Did you mean runserver?
+Type 'manage.py help' for usage.
+PS E:\Extra COurse\blogsite> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 26, 2024 - 14:54:50
+Django version 5.0.6, using settings 'blogsite.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+
+E:\Extra COurse\blogsite\blog\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...

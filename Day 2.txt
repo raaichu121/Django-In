@@ -1,0 +1,63 @@
+PS E:\Extra COurse> pip install django
+PS E:\Extra COurse> cd env
+PS E:\Extra COurse\env> cd Scripts
+PS E:\Extra COurse\env\Scripts> ./activate
+(env) PS E:\Extra COurse\env\Scripts> pip install Django
+
+(env) PS E:\Extra COurse\env\Scripts> python --version
+
+(env) PS E:\Extra COurse\env\Scripts> python -m pip --version
+
+pip 24.0 from E:\Extra COurse\env\Lib\site-packages\pip (python 3.12)
+(env) PS E:\Extra COurse\env\Scripts> python -m pip install --upgrade pip
+
+(env) PS E:\Extra COurse\env\Scripts> python -m pip cache purge
+Files removed: 24
+(env) PS E:\Extra COurse\env\Scripts> pip install django
+
+(env) PS E:\Extra COurse\env\Scripts> cd ..
+(env) PS E:\Extra COurse\env> cd ..
+(env) PS E:\Extra COurse> cd blogsite
+(env) PS E:\Extra COurse\blogsite> python manage.py runserver
+
+(env) PS E:\Extra COurse\blogsite> python manage.py migrations
+
+(env) PS E:\Extra COurse\blogsite> python manage.py makemigrations  
+
+(env) PS E:\Extra COurse\blogsite> python manage.py migrate       
+(env) PS E:\Extra COurse\blogsite> pip install Ipython
+(env) PS E:\Extra COurse\blogsite> python manage.py shell
+
+In [1]: from blog.models import category
+
+In [2]: c=category.objects.create(name="Health")
+
+In [3]: c=category.objects.create(name="Technology")
+
+In [4]: c=category.objects.all()
+
+In [5]: c
+Out[5]: <QuerySet [<category: category object (1)>, <category: category object (2)>]>
+
+In [6]: for i in c
+  Cell In[6], line 1
+    for i in c
+
+In [7]: for i in c:
+   ...:     print(c)
+   ...:
+<QuerySet [<category: category object (1)>, <category: category object (2)>]>
+<QuerySet [<category: category object (1)>, <category: category object (2)>]>
+
+In [8]: for i in c:
+   ...:     print(i.id,i.name)
+   ...:
+1 Health
+2 Technology
+
+In [9]: exit()
+(env) PS E:\Extra COurse\blogsite>
+
+
+
+
